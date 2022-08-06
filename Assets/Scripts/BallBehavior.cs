@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class BallBehavior : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class BallBehavior : MonoBehaviour
 
     public static int localBallCount = 3;
     public static int bulletLength = 3;
+    public static float inaccuracy = .1f;
 
     #endregion
     public Camera playerCam;
@@ -39,11 +41,20 @@ public class BallBehavior : MonoBehaviour
         cannonAngle = Mathf.Clamp(cannonAngle, 30f, 150f);
     }
 
+    private bool isDistance(float distance)
+    {
+        Vector2 mousePosition = playerCam.ScreenToWorldPoint(Input.mousePosition);
+        bool isd = Vector2.Distance(mousePosition, shooter.transform.position) < distance;
+        return isd;
+    }
+
     private void ShootBall()
     {
         if (Input.GetMouseButtonUp(0) && !locked && localBallCount > 0)
         {
-            locked = true;
+            if (isDistance(2f))
+                locked = true;
+            else Debug.Log("You have to be in the cannon's radius to shoot!");
         }
 
         if (locked)
@@ -54,7 +65,7 @@ public class BallBehavior : MonoBehaviour
                 Transform newBall = Instantiate(ball, balls.transform);
                 newBall.gameObject.SetActive(true);
                 newBall.GetComponent<Rigidbody2D>().velocity = 
-                    newBall.transform.right * bulletSpeed;
+                    (newBall.transform.right) * bulletSpeed;
                 bulletLength--;
                 timer = 0f;
             }

@@ -36,9 +36,19 @@ public class PlayCanvasConfig : MonoBehaviour
         if (!gameIsPaused && !gameOver) gameIsPaused = true;
     }
 
-    public void Resume()
+    /// <summary>
+    /// Resume game on a delay (coroutine)
+    /// </summary>
+    /// <returns>null</returns>
+    public IEnumerator ResumeGame()
     {
         if (gameIsPaused) gameIsPaused = false;
+        Debug.Log("Resuming...");
+        yield return new WaitForSeconds(1f);
+    }
+    public void Resume()
+    {
+        StartCoroutine(ResumeGame());
     }
     private void Update()
     {

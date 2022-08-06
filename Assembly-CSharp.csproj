@@ -59,6 +59,8 @@
      <Compile Include="Assets\Scripts\BallBehavior.cs" />
      <Compile Include="Assets\Scripts\TileBehavior.cs" />
      <Compile Include="Assets\Scripts\LaserHandling.cs" />
+     <Compile Include="Assets\Scripts\SplashWarningText.cs" />
+     <Compile Include="Assets\Scripts\UpgradeSystem.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

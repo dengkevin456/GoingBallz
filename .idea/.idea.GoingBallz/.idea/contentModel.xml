@@ -12,8 +12,10 @@
           <e p="BallTileOnCollision.cs" t="Include" />
           <e p="LaserHandling.cs" t="Include" />
           <e p="PlayCanvasConfig.cs" t="Include" />
+          <e p="SplashWarningText.cs" t="Include" />
           <e p="TileBehavior.cs" t="Include" />
           <e p="TileInstance.cs" t="Include" />
+          <e p="UpgradeSystem.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
