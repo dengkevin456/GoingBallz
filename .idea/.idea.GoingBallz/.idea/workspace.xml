@@ -4,34 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4491b1d7-52f7-4d27-adbf-a8ccf92f1dc2" name="Default Changelist" comment="Initializing upgrade system">
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvas.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvas.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvas.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvas.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvasOut.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvasOut.anim.meta" afterDir="false" />
+    <list default="true" id="4491b1d7-52f7-4d27-adbf-a8ccf92f1dc2" name="Default Changelist" comment="Upgrade System commit">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/15/1503ae1bb454e60f8dcf4dba7278fdca" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/3d/3d65a0071bc93b9eac9e474016db1390" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/Artifacts/e9/e9e5922f61a4d787a12c108e816e1a9b" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/31/31f7084e7903c682b2d11a016697cfbc.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/31/31f7084e7903c682b2d11a016697cfbc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/bd/bde620f7f9478694874eef4b92dcf678.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/bd/bde620f7f9478694874eef4b92dcf678.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,9 +37,9 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/LaserHandling.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayCanvasConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SplashWarningText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2CBo3xU8er0l1t0Lm9LxxWJOqe8" />
@@ -72,7 +58,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="SolutionBuilderGeneralOptionsPageId" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
@@ -111,7 +97,8 @@
       <workItem from="1659469450239" duration="2808000" />
       <workItem from="1659753102883" duration="3615000" />
       <workItem from="1659810170211" duration="798000" />
-      <workItem from="1659917346469" duration="3323000" />
+      <workItem from="1659917346469" duration="3364000" />
+      <workItem from="1659978551459" duration="4221000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing upgrade system">
       <created>1659756717538</created>
@@ -120,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659756717538</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Upgrade System commit">
+      <created>1659923546274</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659923546274</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +138,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initializing upgrade system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initializing upgrade system" />
+    <MESSAGE value="Upgrade System commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Upgrade System commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

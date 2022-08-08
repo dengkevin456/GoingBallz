@@ -2,34 +2,60 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class UpgradeSystem : MonoBehaviour
 {
     [Header("References")] public Animator upgradeCanvasAnimator;
-    public static int currentTier = 0;
     private static readonly int IsUpgrading = Animator.StringToHash("isUpgrading");
-    [System.Serializable]
-    public class UpgradeAttributes
-    {
-        public string name { get; set; }
-        public float reloadSpeed { get; set; }
-        public float inaccuracy { get; set; }
-        public Image cannonImage { get; set; }
 
-        public UpgradeAttributes(string name, float reloadSpeed, float inaccuracy, Image cannonImage)
+    [Header("Reload upgrade tier")] public int reloadUpgradeTier;
+    public TextMeshProUGUI reloadUpgradeText;
+    public Button reloadUpgradeButton;
+    /// <summary>
+    /// First value is the reload speed and second is the price, third tells
+    /// when you already bought the stuff or not (0 = not bought, 1 = bought), with reloadupgradetier the index
+    /// </summary>
+    public readonly List<List<float>> reloadUpgrades = new List<List<float>>
+    {
+        new List<float>{0.8f, 0, 1},
+        new List<float>{0.9f, 10f, 0},
+        new List<float>{1f, 20f, 0}
+    };
+
+    /// <summary>
+    /// Assign this to the reload upgrade button
+    /// </summary>
+    public void BuyReloadUpgrade()
+    {
+        if (reloadUpgradeTier < reloadUpgrades.Count - 1)
         {
-            this.name = name;
-            this.reloadSpeed = reloadSpeed;
-            this.inaccuracy = inaccuracy;
-            this.cannonImage = cannonImage;
+            reloadUpgradeTier++;
+            
         }
+        else Debug.Log("You have reached the maximum iter!");
     }
 
-    public static List<UpgradeAttributes> upgrades = new List<UpgradeAttributes>()
+    private void SetUpgradeTexts()
     {
-        new UpgradeAttributes("Tier 1", 0.7f, 0.1f, null)
-    };
-    
+        reloadUpgradeText.text = $"Reload speed: {reloadUpgrades[reloadUpgradeTier][0]}";
+        HandleBuyButton(reloadUpgrades, reloadUpgradeTier, reloadUpgradeButton);
+    }
+
+    private void HandleBuyButton(List<List<float>> upgradeType, int index, Button button)
+    {
+        float money = PlayCanvasConfig.money;
+        if (money >= upgradeType[index][1])
+        {
+            button.GetComponentInChildren<TextMeshProUGUI>().text = "Buy?";
+            button.interactable = true;
+        }
+        else
+        {
+            button.GetComponentInChildren<TextMeshProUGUI>().text = "Not enough\nmoney!";
+            button.interactable = false;
+        }
+    }
 
     public void TriggerUpgrade()
     {
@@ -39,5 +65,10 @@ public class UpgradeSystem : MonoBehaviour
     public void UntriggerUpgrading()
     {
         upgradeCanvasAnimator.SetBool(IsUpgrading, false);
+    }
+
+    private void Update()
+    {
+        SetUpgradeTexts();
     }
 }

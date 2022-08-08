@@ -9,12 +9,13 @@ public class BallBehavior : MonoBehaviour
     [Header("References")] public GameObject balls;
     public Transform ball;
     public static int ballCount = 3;
-
+    public UpgradeSystem us;
     #region GlobalVariables
-
+    
     public static int localBallCount = 3;
     public static int bulletLength = 3;
     public static float inaccuracy = .1f;
+    
 
     #endregion
     public Camera playerCam;
@@ -25,9 +26,22 @@ public class BallBehavior : MonoBehaviour
     public static bool locked = false;
     private Vector2 mousePosition;
     private float cannonAngle;
-    private float timer = 0f;
+    private float timer;
     public float reloadSpeed = 0.8f;
     private static readonly int IsShooting = Animator.StringToHash("isShooting");
+
+    private void Start()
+    {
+        reloadSpeed = us.reloadUpgrades[us.reloadUpgradeTier][0];
+    }
+    
+    /// <summary>
+    /// Don't forget to update your upgrades here! (reload speed, bullet speed, etc.)
+    /// </summary>
+    private void UpdateUpgrades()
+    {
+        reloadSpeed = us.reloadUpgrades[us.reloadUpgradeTier][0];
+    }
     private void RotateCannon()
     {
         mousePosition = playerCam.ScreenToWorldPoint(Input.mousePosition);
@@ -96,6 +110,7 @@ public class BallBehavior : MonoBehaviour
 
     private void FixedUpdate()
     {
+        UpdateUpgrades();
         ClampRotation();
     }
 }
