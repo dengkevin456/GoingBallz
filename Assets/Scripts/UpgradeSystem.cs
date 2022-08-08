@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class UpgradeSystem : MonoBehaviour
 {
+    [Header("References")] public Animator upgradeCanvasAnimator;
     public static int currentTier = 0;
+    private static readonly int IsUpgrading = Animator.StringToHash("isUpgrading");
     [System.Serializable]
     public class UpgradeAttributes
     {
@@ -27,4 +29,15 @@ public class UpgradeSystem : MonoBehaviour
     {
         new UpgradeAttributes("Tier 1", 0.7f, 0.1f, null)
     };
+    
+
+    public void TriggerUpgrade()
+    {
+        upgradeCanvasAnimator.SetBool(IsUpgrading, true);
+    }
+
+    public void UntriggerUpgrading()
+    {
+        upgradeCanvasAnimator.SetBool(IsUpgrading, false);
+    }
 }
