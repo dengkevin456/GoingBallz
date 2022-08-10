@@ -47,7 +47,8 @@ public class UpgradeSystem : MonoBehaviour
         float money = PlayCanvasConfig.money;
         if (money >= upgradeType[index][1])
         {
-            button.GetComponentInChildren<TextMeshProUGUI>().text = "Buy?";
+            button.GetComponentInChildren<TextMeshProUGUI>().text = (int) upgradeType[index][2] == 1 
+                ? "Upgrade!" : $"Buy? ({upgradeType[index][1]}$)";
             button.interactable = true;
         }
         else

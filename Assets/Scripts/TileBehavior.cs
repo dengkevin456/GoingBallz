@@ -50,7 +50,7 @@ public class TileBehavior : MonoBehaviour
     {
         if (tileCount <= 0)
         {
-            PlayCanvasConfig.money += Mathf.Floor(TileInstance.overAllCount / 2);
+            // Add some particle effects here
             Destroy(gameObject);
         }
     }

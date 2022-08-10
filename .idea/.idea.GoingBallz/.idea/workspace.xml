@@ -4,20 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4491b1d7-52f7-4d27-adbf-a8ccf92f1dc2" name="Default Changelist" comment="Upgrade System commit">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/indexLayout.xml" afterDir="false" />
+    <list default="true" id="4491b1d7-52f7-4d27-adbf-a8ccf92f1dc2" name="Default Changelist" comment="Reload upgrade system finished">
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BallTile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/BallTile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/MoneyTile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/MoneyTile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Prefabs/Tile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneytileOnCollision.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/MoneytileOnCollision.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScreen.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileInstance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileInstance.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ShaderCache/EditorEncounteredVariants" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/31/31f7084e7903c682b2d11a016697cfbc.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/31/31f7084e7903c682b2d11a016697cfbc.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-AssetImportWorker0.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/bd/bde620f7f9478694874eef4b92dcf678.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/bd/bde620f7f9478694874eef4b92dcf678.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe0.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,15 +42,16 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Assets/Scripts/BallTileOnCollision.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TileInstance.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameOverOnCollision.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BallCollision.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/LaserHandling.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayCanvasConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SplashWarningText.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MoneytileOnCollision.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TileInstance.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2CBo3xU8er0l1t0Lm9LxxWJOqe8" />
@@ -98,7 +110,9 @@
       <workItem from="1659753102883" duration="3615000" />
       <workItem from="1659810170211" duration="798000" />
       <workItem from="1659917346469" duration="3364000" />
-      <workItem from="1659978551459" duration="4221000" />
+      <workItem from="1659978551459" duration="4292000" />
+      <workItem from="1660086576781" duration="727000" />
+      <workItem from="1660147603107" duration="2057000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing upgrade system">
       <created>1659756717538</created>
@@ -114,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659923546274</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Reload upgrade system finished">
+      <created>1659989928825</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659989928825</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,7 +160,8 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initializing upgrade system" />
     <MESSAGE value="Upgrade System commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upgrade System commit" />
+    <MESSAGE value="Reload upgrade system finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reload upgrade system finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
