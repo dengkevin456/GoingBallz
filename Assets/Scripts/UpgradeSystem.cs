@@ -28,12 +28,15 @@ public class UpgradeSystem : MonoBehaviour
     /// </summary>
     public void BuyReloadUpgrade()
     {
-        if (reloadUpgradeTier < reloadUpgrades.Count - 1)
+        if (!PlayCanvasConfig.gameIsPaused && !PlayCanvasConfig.gameOver)
         {
-            reloadUpgradeTier++;
-            
+            if (reloadUpgradeTier < reloadUpgrades.Count - 1)
+            {
+                PlayCanvasConfig.money -= reloadUpgrades[reloadUpgradeTier][1];
+                reloadUpgradeTier++;
+            }
+            else Debug.Log("You have reached the maximum iter!");
         }
-        else Debug.Log("You have reached the maximum iter!");
     }
 
     private void SetUpgradeTexts()
@@ -60,12 +63,18 @@ public class UpgradeSystem : MonoBehaviour
 
     public void TriggerUpgrade()
     {
-        upgradeCanvasAnimator.SetBool(IsUpgrading, true);
+        if (!PlayCanvasConfig.gameIsPaused && !PlayCanvasConfig.gameOver)
+        {
+            upgradeCanvasAnimator.SetBool(IsUpgrading, true);
+        }
     }
 
     public void UntriggerUpgrading()
     {
-        upgradeCanvasAnimator.SetBool(IsUpgrading, false);
+        if (!PlayCanvasConfig.gameIsPaused && !PlayCanvasConfig.gameOver)
+        {
+            upgradeCanvasAnimator.SetBool(IsUpgrading, false);
+        }
     }
 
     private void Update()

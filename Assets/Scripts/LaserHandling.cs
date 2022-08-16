@@ -1,9 +1,7 @@
 using UnityEngine;
 public class LaserHandling : MonoBehaviour
 {
-    [Header("References")]
-    public LayerMask laserMask = 6;
-
+    [Header("References")] public Transform tile;
     private void IgnoreCollision()
     {
         Physics2D.IgnoreLayerCollision(3, 6);
@@ -12,4 +10,19 @@ public class LaserHandling : MonoBehaviour
     {
         IgnoreCollision();
     }
+
+    private void Update()
+    {
+        TriggerGameOver();
+    }
+
+    private void TriggerGameOver()
+    {
+        if (tile.position.y + tile.localScale.y <= transform.position.y)
+        {
+            PlayCanvasConfig.gameOver = true;
+        }
+    }
+    
+    
 }

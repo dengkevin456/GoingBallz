@@ -57,7 +57,7 @@ public class TileBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (!PlayCanvasConfig.gameIsPaused)
+        if (!PlayCanvasConfig.gameIsPaused && !PlayCanvasConfig.gameOver)
         {
             HandleTileText();
             DestroyTile();

@@ -46,7 +46,7 @@ public class TileInstance : MonoBehaviour
     }
     private void Update()
     {
-        if (!PlayCanvasConfig.gameIsPaused)
+        if (!PlayCanvasConfig.gameIsPaused && !PlayCanvasConfig.gameOver)
         {
             if (BallBehavior.localBallCount <= 0 && BallBehavior.bulletLength <= 0 && BallBehavior.locked)
             {

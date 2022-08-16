@@ -101,7 +101,7 @@ public class BallBehavior : MonoBehaviour
     
     private void Update()
     {
-        if (!PlayCanvasConfig.gameIsPaused)
+        if (!PlayCanvasConfig.gameIsPaused && !PlayCanvasConfig.gameOver)
         {
             if (!locked) RotateCannon();
             ShootBall();

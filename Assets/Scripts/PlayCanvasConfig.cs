@@ -2,20 +2,22 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class PlayCanvasConfig : MonoBehaviour
 {
     public static bool gameIsPaused;
-    public static bool gameOver;
+    public static bool gameOver = false; // Use true for debug purposes
     public static float money = 0f;
     [Header("References")]
     public GameObject pauseScreenUI;
     public GameObject gameOverUI;
     public TextMeshPro scoreText;
+    public Button upgradeButton;
 
     private void HandlePause()
     {
-        Time.timeScale = gameIsPaused ? 0f : 1f;
+        Time.timeScale = (gameIsPaused || gameOver) ? 0f : 1f;
         pauseScreenUI.SetActive(gameIsPaused);
     }
 
@@ -34,6 +36,11 @@ public class PlayCanvasConfig : MonoBehaviour
     public void Pause()
     {
         if (!gameIsPaused && !gameOver) gameIsPaused = true;
+    }
+
+    private void UpgradeButtonInteraction()
+    {
+        upgradeButton.interactable = !BallBehavior.locked;
     }
 
     /// <summary>
@@ -55,6 +62,8 @@ public class PlayCanvasConfig : MonoBehaviour
         HandleScoreText();
         HandleGameOver();
         HandlePause();
+        if (!gameOver)
+            UpgradeButtonInteraction();
     }
     
 }
