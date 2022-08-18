@@ -4,30 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4491b1d7-52f7-4d27-adbf-a8ccf92f1dc2" name="Default Changelist" comment="Main menu system">
+    <list default="true" id="4491b1d7-52f7-4d27-adbf-a8ccf92f1dc2" name="Default Changelist" comment="Fix upgrade system animation bug">
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/RealBall.physicsMaterial2D" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/RealBall.physicsMaterial2D.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FreeGiftShooter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FreeGiftShooter.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GoingBallz/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvas.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvas.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvas.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvas.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvasOut.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animations/UpgradeCanvasOut.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayScreen.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallCollision.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/BallTileOnCollision.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BallTileOnCollision.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/LaserHandling.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LaserHandling.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayCanvasConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayCanvasConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplashWarningText.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BonusBallText.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SplashWarningText.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/BonusBallText.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/TileInstance.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/TileInstance.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ArtifactDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ArtifactDB" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/95/95de6842868c5d4cdd80e087d45fc81a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/Artifacts/d2/d2663d4611aa75cd7bbbf46a23a5a12b" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/CurrentLayout-default.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/InspectorExpandedItems.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Library/LastSceneManagerSetup.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SceneVisibilityState.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Library/ScriptAssemblies/Assembly-CSharp.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/SourceAssetDB" beforeDir="false" afterPath="$PROJECT_DIR$/Library/SourceAssetDB" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/31/31f7084e7903c682b2d11a016697cfbc.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/MainStageHierarchy/31/31f7084e7903c682b2d11a016697cfbc.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Library/StateCache/SceneView/bd/bde620f7f9478694874eef4b92dcf678.json" beforeDir="false" afterPath="$PROJECT_DIR$/Library/StateCache/SceneView/bd/bde620f7f9478694874eef4b92dcf678.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Library/expandedItems" beforeDir="false" afterPath="$PROJECT_DIR$/Library/expandedItems" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,18 +47,20 @@
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Scripts/BallTileOnCollision.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameOverOnCollision.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BallCollision.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SplashWarningText.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MoneytileOnCollision.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/LaserHandling.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/TileInstance.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PlayCanvasConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/FreeGiftShooter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BallTileOnCollision.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BonusBallText.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UpgradeSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BallBehavior.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/BallCollision.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TileInstance.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LaserHandling.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/TileBehavior.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2CBo3xU8er0l1t0Lm9LxxWJOqe8" />
@@ -114,7 +123,8 @@
       <workItem from="1660086576781" duration="727000" />
       <workItem from="1660147603107" duration="2105000" />
       <workItem from="1660322037913" duration="1140000" />
-      <workItem from="1660680416939" duration="1786000" />
+      <workItem from="1660680416939" duration="4002000" />
+      <workItem from="1660856641407" duration="8395000" />
     </task>
     <task id="LOCAL-00001" summary="Initializing upgrade system">
       <created>1659756717538</created>
@@ -151,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660322164212</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fix upgrade system animation bug">
+      <created>1660682877724</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1660682877724</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,20 +196,21 @@
     <MESSAGE value="Reload upgrade system finished" />
     <MESSAGE value="MoneyTile.prefab.meta" />
     <MESSAGE value="Main menu system" />
-    <option name="LAST_COMMIT_MESSAGE" value="Main menu system" />
+    <MESSAGE value="Fix upgrade system animation bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix upgrade system animation bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/BallTileOnCollision.cs</url>
-          <line>17</line>
+          <line>19</line>
           <properties documentPath="C:\Users\Kevin\GoingBallz\Assets\Scripts\BallTileOnCollision.cs" initialLine="16" containingFunctionPresentation="method 'OnTriggerEnter2D'">
             <startOffsets>
-              <option value="446" />
+              <option value="527" />
             </startOffsets>
             <endOffsets>
-              <option value="447" />
+              <option value="528" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />

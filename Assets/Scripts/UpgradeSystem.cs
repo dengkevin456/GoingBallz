@@ -12,6 +12,9 @@ public class UpgradeSystem : MonoBehaviour
     [Header("Reload upgrade tier")] public int reloadUpgradeTier;
     public TextMeshProUGUI reloadUpgradeText;
     public Button reloadUpgradeButton;
+    [Header("Damage upgrade tier")] public int damageUpgradeTier;
+    public TextMeshProUGUI damageUpgradeText;
+    public Button damageUpgradeButton;
     /// <summary>
     /// First value is the reload speed and second is the price, third tells
     /// when you already bought the stuff or not (0 = not bought, 1 = bought), with reloadupgradetier the index
@@ -21,6 +24,13 @@ public class UpgradeSystem : MonoBehaviour
         new List<float>{0.8f, 0, 1},
         new List<float>{0.9f, 10f, 0},
         new List<float>{1f, 20f, 0}
+    };
+
+    public readonly List<List<float>> damageUpgrades = new List<List<float>>
+    {
+        new List<float> {1, 0, 1},
+        new List<float> {2, 4, 0},
+        new List<float> {4, 6, 0},
     };
 
     /// <summary>
@@ -39,10 +49,28 @@ public class UpgradeSystem : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Assign this to the damage upgrade button
+    /// </summary>
+    public void BuyDamageUpgrade()
+    {
+        if (!PlayCanvasConfig.gameIsPaused && !PlayCanvasConfig.gameOver)
+        {
+            if (damageUpgradeTier < damageUpgrades.Count - 1)
+            {
+                PlayCanvasConfig.money -= damageUpgrades[damageUpgradeTier][1];
+                damageUpgradeTier++;
+            }
+            else Debug.Log("You have reached the maximum iter!");
+        }
+    }
+
     private void SetUpgradeTexts()
     {
         reloadUpgradeText.text = $"Reload speed: {reloadUpgrades[reloadUpgradeTier][0]}";
         HandleBuyButton(reloadUpgrades, reloadUpgradeTier, reloadUpgradeButton);
+        damageUpgradeText.text = $"Damage speed: {damageUpgrades[damageUpgradeTier][0]}";
+        HandleBuyButton(damageUpgrades, damageUpgradeTier, damageUpgradeButton);
     }
 
     private void HandleBuyButton(List<List<float>> upgradeType, int index, Button button)

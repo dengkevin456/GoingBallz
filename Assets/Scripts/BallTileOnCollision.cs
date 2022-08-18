@@ -5,10 +5,12 @@ using UnityEngine;
 public class BallTileOnCollision : MonoBehaviour
 {
     [Header("References")] public GameObject balls;
+    [SerializeField] private Transform bonusBalltileText;
     private Transform ballTile;
     private bool collided;
     public Rigidbody2D ball;
-    public LayerMask ballMask = 3;
+    private Vector3 velocity;
+    private bool triggered;
     private void Start()
     {
         ballTile = GetComponent<Transform>();
@@ -19,9 +21,26 @@ public class BallTileOnCollision : MonoBehaviour
         if (other.gameObject.layer == 3)
         {
             BallBehavior.ballCount++;
-            Debug.LogWarning($"Count: {BallBehavior.localBallCount}");
-            Debug.LogWarning($"Bruh: {BallBehavior.bulletLength}");
-            Destroy(gameObject);
+            Physics2D.IgnoreCollision(GetComponent<Collider2D>(), other);
+            triggered = true;
+        }
+    }
+
+
+    private void TriggerBonusAnimation()
+    {
+        if (triggered)
+        {
+            transform.position = Vector3.SmoothDamp(transform.position, 
+                bonusBalltileText.position, ref velocity, 0.7f);
+            Destroy(gameObject, 3f);
+        }
+    }
+    private void Update()
+    {
+        if (!PlayCanvasConfig.gameIsPaused && !PlayCanvasConfig.gameOver)
+        {
+            TriggerBonusAnimation();
         }
     }
 }

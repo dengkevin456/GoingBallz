@@ -13,7 +13,7 @@ public class TileBehavior : MonoBehaviour
     public Transform tileGroup;
     public Transform tile;
     private Vector3 velocity;
-    private int tileCount;
+    private float tileCount;
     private bool destroyed;
 
     private void Start()
@@ -68,13 +68,7 @@ public class TileBehavior : MonoBehaviour
     {
         if (other.gameObject.layer == 3)
         {
-            tileCount--;
-        }
-
-        if (other.gameObject == floor && !PlayCanvasConfig.gameOver)
-        {
-            Debug.Log("Collision!");
-            PlayCanvasConfig.gameOver = true;
+            tileCount -= BallBehavior.damage;
         }
     }
 }

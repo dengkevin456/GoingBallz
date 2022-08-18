@@ -15,7 +15,7 @@ public class BallBehavior : MonoBehaviour
     public static int localBallCount = 3;
     public static int bulletLength = 3;
     public static float inaccuracy = .1f;
-    
+    public static float damage = 1f;
 
     #endregion
     public Camera playerCam;
@@ -33,6 +33,7 @@ public class BallBehavior : MonoBehaviour
     private void Start()
     {
         reloadSpeed = us.reloadUpgrades[us.reloadUpgradeTier][0];
+        damage = us.damageUpgrades[us.damageUpgradeTier][0];
     }
     
     /// <summary>
@@ -41,6 +42,7 @@ public class BallBehavior : MonoBehaviour
     private void UpdateUpgrades()
     {
         reloadSpeed = us.reloadUpgrades[us.reloadUpgradeTier][0];
+        damage = us.damageUpgrades[us.damageUpgradeTier][0];
     }
     private void RotateCannon()
     {

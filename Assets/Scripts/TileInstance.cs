@@ -13,6 +13,7 @@ public class TileInstance : MonoBehaviour
     private void Start()
     {
         tileGroup = GetComponent<Transform>();
+        tile.gameObject.SetActive(false);
     }
 
     private void GenerateTile()
@@ -24,6 +25,7 @@ public class TileInstance : MonoBehaviour
             {
                 Transform tilePos = spawnPos.transform;
                 Transform newTile = Instantiate(tile, tileGroup);
+                newTile.gameObject.SetActive(true);
                 newTile.position = new Vector3(tilePos.position.x + i * tile.localScale.x, 
                     tilePos.position.y, 0);
             }
@@ -35,7 +37,7 @@ public class TileInstance : MonoBehaviour
                 newBallTile.position = new Vector3(tilePos.position.x + i * tile.localScale.x, tilePos.position.y, 0);
             }
 
-            if (r == 5 || r == 8 || r == 9)
+            if (r == 5)
             {
                 Transform tilePos = spawnPos.transform;
                 GameObject newMoneyTile = Instantiate(moneyTilePrefab, tileGroup);

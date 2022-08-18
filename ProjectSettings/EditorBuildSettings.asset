@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: e65d9e0974e209f498ae673ce4cd0d28
+  - enabled: 1
     path: Assets/Scenes/PlayScreen.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/FreeGift.unity
+    guid: a06da3121a6be5744ac8bb1f8b6b3aba
   m_configObjects: {}

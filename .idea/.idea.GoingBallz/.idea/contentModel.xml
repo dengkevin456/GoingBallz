@@ -10,11 +10,12 @@
           <e p="BallBehavior.cs" t="Include" />
           <e p="BallCollision.cs" t="Include" />
           <e p="BallTileOnCollision.cs" t="Include" />
+          <e p="BonusBallText.cs" t="Include" />
+          <e p="FreeGiftShooter.cs" t="Include" />
           <e p="LaserHandling.cs" t="Include" />
           <e p="MainMenuSystem.cs" t="Include" />
           <e p="MoneytileOnCollision.cs" t="Include" />
           <e p="PlayCanvasConfig.cs" t="Include" />
-          <e p="SplashWarningText.cs" t="Include" />
           <e p="TileBehavior.cs" t="Include" />
           <e p="TileInstance.cs" t="Include" />
           <e p="UpgradeSystem.cs" t="Include" />

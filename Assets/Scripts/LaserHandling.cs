@@ -18,7 +18,7 @@ public class LaserHandling : MonoBehaviour
 
     private void TriggerGameOver()
     {
-        if (tile.position.y + tile.localScale.y <= transform.position.y)
+        if (tile.position.y + tile.localScale.y / 2 <= transform.position.y)
         {
             PlayCanvasConfig.gameOver = true;
         }
